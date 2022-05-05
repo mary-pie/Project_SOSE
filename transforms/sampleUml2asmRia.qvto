@@ -1,32 +1,25 @@
-modeltype uml uses "http://www.eclipse.org/uml2/5.0.0/UML";
-
 //bind the model type symbol to an existing metamodel definition
 modeltype asmRia uses asmRia::richElementsMetamodel;
+modeltype uml uses "http://www.eclipse.org/uml2/5.0.0/UML";
 
 transformation sampleUml2asmRia(in src_model : uml, out target_model : asmRia);
 
-query Class::hasMethods() : Boolean{
-	return self.ownedOperation <> null;
-}
-
 main() {
 	src_model.objectsOfType(State) -> map StateToService();
-	src_model.objectsOfType(UseCase) -> map UseCaseToNode();
-	src_model.objectsOfType(Class) -> map ClassToEntity();
 }
 
-	
-mapping UseCase::UseCaseToNode() : RichNode
-	{
-		
-	};
-	
-mapping Class::ClassToEntity() : RichEntity
-	{
+
+
+/*mapping State::StateToService() : RichService {
 		result.name := self.name;
-	};
+	};*/
 	
 mapping State::StateToService() : RichService
+	when {
+  -- You need to use the fully qualified name!!
+  	not self.getAppliedStereotype('model::ASMRia Profile::service').oclIsUndefined()
+	}
 	{
-		result.name := self.name;
-	};
+	  result.name := self.name;
+	  
+	}

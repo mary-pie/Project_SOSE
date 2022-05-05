@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="ASCII"?>
 <uriMap:MappingContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:uriMap="http:///www.eclipse.org/m2m/qvt/oml/MModelUriMap/1.0.0">
-  <mapping sourceURI="http:///asmRia.ecore" targetURI="platform:/resource/ProgettoSose2122/model/asmRia.ecore"/>
+  <mapping sourceURI="http:///asmRia.ecore" targetURI="platform:/resource/Project_SOSE/ecores/asmRia.ecore"/>
 </uriMap:MappingContainer>

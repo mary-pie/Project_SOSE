@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="asmRia" nsURI="http:///asmRia.ecore" nsPrefix="asmRia">
+  <eClassifiers xsi:type="ecore:EClass" name="Service">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" ordered="false" unique="false"
+        lowerBound="1" eType="ecore:EDataType types.ecore#//String"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Entity">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" ordered="false" unique="false"
+        lowerBound="1" eType="ecore:EDataType types.ecore#//String"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Layout">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" ordered="false" unique="false"
+        lowerBound="1" eType="ecore:EDataType types.ecore#//String"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Node"/>
+  <eClassifiers xsi:type="ecore:EClass" name="CompositeUiElement">
+    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details key="originalName" value="CompositeUIElement"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="UiElement">
+    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details key="originalName" value="UIElement"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ValueObject"/>
+  <eSubpackages name="richElementsMetamodel" nsURI="http:///asmRia/richElementsMetamodel.ecore"
+      nsPrefix="asmRia.richElementsMetamodel">
+    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details key="originalName" value="RichElements metamodel"/>
+    </eAnnotations>
+    <eClassifiers xsi:type="ecore:EEnum" name="LocationType">
+      <eLiterals name="client">
+        <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details key="originalName" value="CLIENT"/>
+        </eAnnotations>
+      </eLiterals>
+      <eLiterals name="server" value="1">
+        <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details key="originalName" value="SERVER"/>
+        </eAnnotations>
+      </eLiterals>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="RichService" eSuperTypes="#//Service">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="location" ordered="false"
+          unique="false" lowerBound="1" eType="#//richElementsMetamodel/LocationType"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EEnum" name="DurationType">
+      <eLiterals name="temporal">
+        <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details key="originalName" value="TEMPORAL"/>
+        </eAnnotations>
+      </eLiterals>
+      <eLiterals name="permanent" value="1">
+        <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details key="originalName" value="PERMANENT"/>
+        </eAnnotations>
+      </eLiterals>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EEnum" name="UiElementType">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details key="originalName" value="UIElementType"/>
+      </eAnnotations>
+      <eLiterals name="flash">
+        <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details key="originalName" value="FLASH"/>
+        </eAnnotations>
+      </eLiterals>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="RichEntity" eSuperTypes="#//Entity">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details key="originalName" value="RichEntity "/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="location" ordered="false"
+          unique="false" lowerBound="1" eType="#//richElementsMetamodel/LocationType"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="duration" ordered="false"
+          unique="false" lowerBound="1" eType="#//richElementsMetamodel/DurationType"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="RichLayout" eSuperTypes="#//Layout">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="location" ordered="false"
+          lowerBound="1" eType="#//richElementsMetamodel/LocationType"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="RichNode" eSuperTypes="#//Node">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="location" ordered="false"
+          unique="false" lowerBound="1" eType="#//richElementsMetamodel/LocationType"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="RichCompositeUiElement" eSuperTypes="#//CompositeUiElement">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details key="originalName" value="RichCompositeUIElement"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="location" ordered="false"
+          unique="false" lowerBound="1" eType="#//richElementsMetamodel/LocationType"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="RichUiElement" eSuperTypes="#//UiElement">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details key="originalName" value="RichUIElement"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="elementType" ordered="false"
+          unique="false" lowerBound="1" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="RichValueObject" eSuperTypes="#//ValueObject">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="location" ordered="false"
+          unique="false" lowerBound="1" eType="#//richElementsMetamodel/LocationType"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="duration" ordered="false"
+          unique="false" lowerBound="1" eType="#//richElementsMetamodel/DurationType"/>
+    </eClassifiers>
+  </eSubpackages>
+</ecore:EPackage>
