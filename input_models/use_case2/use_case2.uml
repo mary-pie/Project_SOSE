@@ -1,11 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_ZBLI4MxSEeyMe4t3LbxjHw" name="use_case2">
-  <packageImport xmi:type="uml:PackageImport" xmi:id="_ZCnTUMxSEeyMe4t3LbxjHw">
-    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
-  </packageImport>
-  <packagedElement xmi:type="uml:StateMachine" xmi:id="_ZB6vwMxSEeyMe4t3LbxjHw" name="StateMachine1">
-    <region xmi:type="uml:Region" xmi:id="_ZCIyMMxSEeyMe4t3LbxjHw" name="Region1">
-      <subvertex xmi:type="uml:State" xmi:id="_aB-ekMxSEeyMe4t3LbxjHw" name="State1"/>
-    </region>
-  </packagedElement>
-</uml:Model>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ASMRiaProfile="http://model/schemas/ASMRiaProfile/_f9dAYLo8Eeyy__SrcV5BPw/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://model/schemas/ASMRiaProfile/_f9dAYLo8Eeyy__SrcV5BPw/0 /Project_SOSE/profile/model.profile.uml#_f9h44Lo8Eeyy__SrcV5BPw">
+  <uml:Model xmi:id="_wcBH8M3tEeyBZZ73Ol4BHw" name="use_case2">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_wd8akM3tEeyBZZ73Ol4BHw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_xXjjIM3tEeyBZZ73Ol4BHw" name="Actor3"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_y4qwkM3tEeyBZZ73Ol4BHw" name="Autenticazione"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NVGMEM3uEeyBZZ73Ol4BHw" memberEnd="_NVM5wM3uEeyBZZ73Ol4BHw _NVM5wc3uEeyBZZ73Ol4BHw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NVLroM3uEeyBZZ73Ol4BHw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NVLroc3uEeyBZZ73Ol4BHw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_NVM5wM3uEeyBZZ73Ol4BHw" name="usecase4" type="_y4qwkM3tEeyBZZ73Ol4BHw" association="_NVGMEM3uEeyBZZ73Ol4BHw"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_NVM5wc3uEeyBZZ73Ol4BHw" name="actor3" type="_xXjjIM3tEeyBZZ73Ol4BHw" association="_NVGMEM3uEeyBZZ73Ol4BHw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_tQCoENBGEey6HYSYZrj42g" name="Gestione carriera"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_taJmUNBGEey6HYSYZrj42g" name="Mostra carriera"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_CJlCwNBHEey6HYSYZrj42g" memberEnd="_CJotItBHEey6HYSYZrj42g _CJotI9BHEey6HYSYZrj42g">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_CJotINBHEey6HYSYZrj42g" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_CJotIdBHEey6HYSYZrj42g" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_CJotItBHEey6HYSYZrj42g" name="gestione carriera" type="_tQCoENBGEey6HYSYZrj42g" association="_CJlCwNBHEey6HYSYZrj42g"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_CJotI9BHEey6HYSYZrj42g" name="actor3" type="_xXjjIM3tEeyBZZ73Ol4BHw" association="_CJlCwNBHEey6HYSYZrj42g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_CwWu4NBHEey6HYSYZrj42g" memberEnd="_CwXV8NBHEey6HYSYZrj42g _CwXV8dBHEey6HYSYZrj42g">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_CwWu4dBHEey6HYSYZrj42g" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_CwWu4tBHEey6HYSYZrj42g" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_CwXV8NBHEey6HYSYZrj42g" name="mostra carriera" type="_taJmUNBGEey6HYSYZrj42g" association="_CwWu4NBHEey6HYSYZrj42g"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_CwXV8dBHEey6HYSYZrj42g" name="actor3" type="_xXjjIM3tEeyBZZ73Ol4BHw" association="_CwWu4NBHEey6HYSYZrj42g"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_T1QqsM_hEey6HYSYZrj42g">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_T1Sf4M_hEey6HYSYZrj42g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="/Project_SOSE/profile/model.profile.uml#_f9h44Lo8Eeyy__SrcV5BPw"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="/Project_SOSE/profile/model.profile.uml#_lDEo4LcnEeymGtFdUNayGA"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_T1c38M_hEey6HYSYZrj42g">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_T1c38c_hEey6HYSYZrj42g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="/Project_SOSE/profile/model.profile.uml#_f9bLMLo8Eeyy__SrcV5BPw"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="/Project_SOSE/profile/model.profile.uml#_hfwTILcnEeymGtFdUNayGA"/>
+    </profileApplication>
+  </uml:Model>
+  <ASMRiaProfile:node xmi:id="_V6QoUM_hEey6HYSYZrj42g" base_UseCase="_y4qwkM3tEeyBZZ73Ol4BHw"/>
+  <ASMRiaProfile:node xmi:id="_tQO1UNBGEey6HYSYZrj42g" base_UseCase="_tQCoENBGEey6HYSYZrj42g"/>
+  <ASMRiaProfile:node xmi:id="_taLbgNBGEey6HYSYZrj42g" base_UseCase="_taJmUNBGEey6HYSYZrj42g"/>
+</xmi:XMI>

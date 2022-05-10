@@ -6,11 +6,17 @@
     </packageImport>
     <packagedElement xmi:type="uml:StateMachine" xmi:id="_UsYFIMxNEeyHPOAzfA-Bgw" name="StateMachine1">
       <region xmi:type="uml:Region" xmi:id="_UsYsMMxNEeyHPOAzfA-Bgw" name="Region1">
-        <transition xmi:type="uml:Transition" xmi:id="_XpDRoMxNEeyHPOAzfA-Bgw" source="_VdWPEMxNEeyHPOAzfA-Bgw" target="_WFPVgMxNEeyHPOAzfA-Bgw"/>
-        <transition xmi:type="uml:Transition" xmi:id="_YMk1cMxNEeyHPOAzfA-Bgw" source="_WFPVgMxNEeyHPOAzfA-Bgw" target="_WypOEMxNEeyHPOAzfA-Bgw"/>
-        <subvertex xmi:type="uml:Pseudostate" xmi:id="_VdWPEMxNEeyHPOAzfA-Bgw" name="Initial1"/>
-        <subvertex xmi:type="uml:State" xmi:id="_WFPVgMxNEeyHPOAzfA-Bgw" name="State2"/>
-        <subvertex xmi:type="uml:FinalState" xmi:id="_WypOEMxNEeyHPOAzfA-Bgw" name="FinalState3"/>
+        <transition xmi:type="uml:Transition" xmi:id="_XpDRoMxNEeyHPOAzfA-Bgw" source="_VdWPEMxNEeyHPOAzfA-Bgw" target="_k2My0NBHEey6HYSYZrj42g"/>
+        <transition xmi:type="uml:Transition" xmi:id="_vY4ucNBHEey6HYSYZrj42g" source="_k2My0NBHEey6HYSYZrj42g" target="_WFPVgMxNEeyHPOAzfA-Bgw"/>
+        <transition xmi:type="uml:Transition" xmi:id="_eC2aQNBIEey6HYSYZrj42g" source="_WFPVgMxNEeyHPOAzfA-Bgw" target="_UrS1ANBIEey6HYSYZrj42g"/>
+        <transition xmi:type="uml:Transition" xmi:id="_f2uysNBIEey6HYSYZrj42g" name="true" source="_UrS1ANBIEey6HYSYZrj42g" target="_WypOEMxNEeyHPOAzfA-Bgw"/>
+        <transition xmi:type="uml:Transition" xmi:id="_qVvIMNBIEey6HYSYZrj42g" name="false" source="_UrS1ANBIEey6HYSYZrj42g" target="_mvHm0NBIEey6HYSYZrj42g"/>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_VdWPEMxNEeyHPOAzfA-Bgw"/>
+        <subvertex xmi:type="uml:State" xmi:id="_WFPVgMxNEeyHPOAzfA-Bgw" name="Login"/>
+        <subvertex xmi:type="uml:FinalState" xmi:id="_WypOEMxNEeyHPOAzfA-Bgw"/>
+        <subvertex xmi:type="uml:State" xmi:id="_k2My0NBHEey6HYSYZrj42g" name="Inserimento dati"/>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_UrS1ANBIEey6HYSYZrj42g" kind="choice"/>
+        <subvertex xmi:type="uml:State" xmi:id="_mvHm0NBIEey6HYSYZrj42g" name="Messaggio errore"/>
       </region>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_c3Zl0MxNEeyHPOAzfA-Bgw">
@@ -21,4 +27,5 @@
     </profileApplication>
   </uml:Model>
   <ASMRiaProfile:service xmi:id="_PYwyQMxUEeyMe4t3LbxjHw" base_State="_WFPVgMxNEeyHPOAzfA-Bgw"/>
+  <ASMRiaProfile:service xmi:id="_k2TggNBHEey6HYSYZrj42g" base_State="_k2My0NBHEey6HYSYZrj42g"/>
 </xmi:XMI>
