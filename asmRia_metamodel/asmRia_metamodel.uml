@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_OihdALTKEeyE4sZyHqwtJA" name="asmRia" visibility="package">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_OlR2ELTKEeyE4sZyHqwtJA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="__cYAQLcZEeymGtFdUNayGA" name="Service" visibility="package">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="__FfC4LccEeymGtFdUNayGA" name="name" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_LkawILcaEeymGtFdUNayGA" name="RichElements metamodel" visibility="package" URI="">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_a0UsALceEeymGtFdUNayGA" name="LocationType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_jLYdkLceEeymGtFdUNayGA" name="CLIENT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_ttRH8LceEeymGtFdUNayGA" name="SERVER"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_LcipsLceEeymGtFdUNayGA" name="RichService" visibility="package">
+      <generalization xmi:type="uml:Generalization" xmi:id="_PfDAYLcfEeymGtFdUNayGA" general="__cYAQLcZEeymGtFdUNayGA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_2RcIcLceEeymGtFdUNayGA" name="location" type="_a0UsALceEeymGtFdUNayGA" isUnique="false"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_UM52oLcfEeymGtFdUNayGA" name="DurationType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_bv01gLcfEeymGtFdUNayGA" name="TEMPORAL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_dY4eALcfEeymGtFdUNayGA" name="PERMANENT"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_qOLVcLcfEeymGtFdUNayGA" name="UIElementType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_y__wYLcfEeymGtFdUNayGA" name="FLASH"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_7shboLcfEeymGtFdUNayGA" name="RichEntity " visibility="package">
+      <generalization xmi:type="uml:Generalization" xmi:id="_OvJlwLclEeymGtFdUNayGA" general="_d1CuMLciEeymGtFdUNayGA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_NYcDwLcgEeymGtFdUNayGA" name="location" type="_a0UsALceEeymGtFdUNayGA" isUnique="false"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_WdKzoLcgEeymGtFdUNayGA" name="duration" type="_UM52oLcfEeymGtFdUNayGA" isUnique="false"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_76RjwLcfEeymGtFdUNayGA" name="RichLayout" visibility="package">
+      <generalization xmi:type="uml:Generalization" xmi:id="_HckwALclEeymGtFdUNayGA" general="_fXCP8LcjEeymGtFdUNayGA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_76RjwrcfEeymGtFdUNayGA" name="location" type="_a0UsALceEeymGtFdUNayGA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_lSYUYLcgEeymGtFdUNayGA" name="RichNode" visibility="package">
+      <generalization xmi:type="uml:Generalization" xmi:id="_VyDdQLckEeymGtFdUNayGA" general="_NzIUULcjEeymGtFdUNayGA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_lSYUYbcgEeymGtFdUNayGA" name="location" type="_a0UsALceEeymGtFdUNayGA" isUnique="false"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_uUXSQLcgEeymGtFdUNayGA" name="RichCompositeUIElement" visibility="package">
+      <generalization xmi:type="uml:Generalization" xmi:id="_EHGpALclEeymGtFdUNayGA" general="_bxvkQLcjEeymGtFdUNayGA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_uUXSQrcgEeymGtFdUNayGA" name="location" type="_a0UsALceEeymGtFdUNayGA" isUnique="false"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_DjzEcLchEeymGtFdUNayGA" name="RichUIElement" visibility="package">
+      <generalization xmi:type="uml:Generalization" xmi:id="_LjI8wLclEeymGtFdUNayGA" general="_o6C3QLcjEeymGtFdUNayGA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_DjzEcbchEeymGtFdUNayGA" name="elementType" isUnique="false"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_snpU8LckEeymGtFdUNayGA" name="RichValueObject" visibility="package">
+      <generalization xmi:type="uml:Generalization" xmi:id="_TtdS0LclEeymGtFdUNayGA" general="_TA718LcjEeymGtFdUNayGA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_w1kG4LckEeymGtFdUNayGA" name="location" type="_a0UsALceEeymGtFdUNayGA" isUnique="false"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_zkP6sLckEeymGtFdUNayGA" name="duration" type="_UM52oLcfEeymGtFdUNayGA" isUnique="false"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_d1CuMLciEeymGtFdUNayGA" name="Entity">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_mXyyYLciEeymGtFdUNayGA" name="name" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_NzIUULcjEeymGtFdUNayGA" name="Node"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_TA718LcjEeymGtFdUNayGA" name="ValueObject" visibility="public"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_bxvkQLcjEeymGtFdUNayGA" name="CompositeUIElement"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_fXCP8LcjEeymGtFdUNayGA" name="Layout" visibility="package">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_k0QtoLcjEeymGtFdUNayGA" name="name" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_o6C3QLcjEeymGtFdUNayGA" name="UIElement"/>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_0NYYcLTNEeyE4sZyHqwtJA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0NaNoLTNEeyE4sZyHqwtJA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
+</uml:Model>

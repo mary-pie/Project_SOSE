@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/uml2/2.2.0/GenModel" xmlns:genmodel_1="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/ProgettoSose2122/src" modelPluginID="ProgettoSose2122"
+    modelName="Models" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.uml2.uml.ecore.importer" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <genAnnotations xmi:type="genmodel_1:GenAnnotation" source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.uml2.uml.ecore.importer">
+    <details xmi:type="ecore:EStringToStringMapEntry" key="OPPOSITE_ROLE_NAMES" value="PROCESS"/>
+    <details xmi:type="ecore:EStringToStringMapEntry" key="DUPLICATE_FEATURES" value="PROCESS"/>
+    <details xmi:type="ecore:EStringToStringMapEntry" key="ANNOTATION_DETAILS" value="PROCESS"/>
+    <details xmi:type="ecore:EStringToStringMapEntry" key="PROPERTY_DEFAULT_EXPRESSIONS"
+        value="PROCESS"/>
+    <details xmi:type="ecore:EStringToStringMapEntry" key="DUPLICATE_FEATURE_INHERITANCE"
+        value="PROCESS"/>
+    <details xmi:type="ecore:EStringToStringMapEntry" key="COMMENTS" value="PROCESS"/>
+    <details xmi:type="ecore:EStringToStringMapEntry" key="DERIVED_FEATURES" value="PROCESS"/>
+    <details xmi:type="ecore:EStringToStringMapEntry" key="SUPER_CLASS_ORDER" value="PROCESS"/>
+    <details xmi:type="ecore:EStringToStringMapEntry" key="DUPLICATE_OPERATION_INHERITANCE"
+        value="PROCESS"/>
+    <details xmi:type="ecore:EStringToStringMapEntry" key="REDEFINING_OPERATIONS"
+        value="PROCESS"/>
+    <details xmi:type="ecore:EStringToStringMapEntry" key="INVARIANT_CONSTRAINTS"
+        value="PROCESS"/>
+    <details xmi:type="ecore:EStringToStringMapEntry" key="UNION_PROPERTIES" value="PROCESS"/>
+    <details xmi:type="ecore:EStringToStringMapEntry" key="DUPLICATE_OPERATIONS" value="PROCESS"/>
+    <details xmi:type="ecore:EStringToStringMapEntry" key="NON_API_INVARIANTS" value="PROCESS"/>
+    <details xmi:type="ecore:EStringToStringMapEntry" key="CAMEL_CASE_NAMES" value="PROCESS"/>
+    <details xmi:type="ecore:EStringToStringMapEntry" key="SUBSETTING_PROPERTIES"
+        value="PROCESS"/>
+    <details xmi:type="ecore:EStringToStringMapEntry" key="OPERATION_BODIES" value="PROCESS"/>
+    <details xmi:type="ecore:EStringToStringMapEntry" key="ECORE_TAGGED_VALUES" value="PROCESS"/>
+    <details xmi:type="ecore:EStringToStringMapEntry" key="UNTYPED_PROPERTIES" value="PROCESS"/>
+    <details xmi:type="ecore:EStringToStringMapEntry" key="REDEFINING_PROPERTIES"
+        value="PROCESS"/>
+    <details xmi:type="ecore:EStringToStringMapEntry" key="INVOCATION_DELEGATES" value="PROCESS"/>
+    <details xmi:type="ecore:EStringToStringMapEntry" key="VALIDATION_DELEGATES" value="PROCESS"/>
+  </genAnnotations>
+  <foreignModel>models.uml</foreignModel>
+  <genPackages xmi:type="genmodel:GenPackage" prefix="AsmRia" disposableProviderFactory="true"
+      ecorePackage="ecore:EPackage asmRia.ecore#/">
+    <genClasses xmi:type="genmodel:GenClass" ecoreClass="ecore:EClass asmRia.ecore#//Service">
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute asmRia.ecore#//Service/name"/>
+    </genClasses>
+    <genClasses xmi:type="genmodel:GenClass" ecoreClass="ecore:EClass asmRia.ecore#//Entity">
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute asmRia.ecore#//Entity/name"/>
+    </genClasses>
+    <genClasses xmi:type="genmodel:GenClass" ecoreClass="ecore:EClass asmRia.ecore#//Layout">
+      <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute asmRia.ecore#//Layout/name"/>
+    </genClasses>
+    <genClasses xmi:type="genmodel:GenClass" ecoreClass="ecore:EClass asmRia.ecore#//Node"/>
+    <genClasses xmi:type="genmodel:GenClass" ecoreClass="ecore:EClass asmRia.ecore#//CompositeUiElement"/>
+    <genClasses xmi:type="genmodel:GenClass" ecoreClass="ecore:EClass asmRia.ecore#//UiElement"/>
+    <genClasses xmi:type="genmodel:GenClass" ecoreClass="ecore:EClass asmRia.ecore#//ValueObject"/>
+    <nestedGenPackages xmi:type="genmodel:GenPackage" prefix="RichElementsMetamodel"
+        disposableProviderFactory="true" ecorePackage="ecore:EPackage asmRia.ecore#//richElementsMetamodel">
+      <genEnums xmi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="ecore:EEnum asmRia.ecore#//richElementsMetamodel/LocationType">
+        <genEnumLiterals xmi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ecore:EEnumLiteral asmRia.ecore#//richElementsMetamodel/LocationType/client"/>
+        <genEnumLiterals xmi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ecore:EEnumLiteral asmRia.ecore#//richElementsMetamodel/LocationType/server"/>
+      </genEnums>
+      <genEnums xmi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="ecore:EEnum asmRia.ecore#//richElementsMetamodel/DurationType">
+        <genEnumLiterals xmi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ecore:EEnumLiteral asmRia.ecore#//richElementsMetamodel/DurationType/temporal"/>
+        <genEnumLiterals xmi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ecore:EEnumLiteral asmRia.ecore#//richElementsMetamodel/DurationType/permanent"/>
+      </genEnums>
+      <genEnums xmi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="ecore:EEnum asmRia.ecore#//richElementsMetamodel/UiElementType">
+        <genEnumLiterals xmi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="ecore:EEnumLiteral asmRia.ecore#//richElementsMetamodel/UiElementType/flash"/>
+      </genEnums>
+      <genClasses xmi:type="genmodel:GenClass" ecoreClass="ecore:EClass asmRia.ecore#//richElementsMetamodel/RichService">
+        <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute asmRia.ecore#//richElementsMetamodel/RichService/location"/>
+      </genClasses>
+      <genClasses xmi:type="genmodel:GenClass" ecoreClass="ecore:EClass asmRia.ecore#//richElementsMetamodel/RichEntity">
+        <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute asmRia.ecore#//richElementsMetamodel/RichEntity/location"/>
+        <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute asmRia.ecore#//richElementsMetamodel/RichEntity/duration"/>
+      </genClasses>
+      <genClasses xmi:type="genmodel:GenClass" ecoreClass="ecore:EClass asmRia.ecore#//richElementsMetamodel/RichLayout">
+        <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute asmRia.ecore#//richElementsMetamodel/RichLayout/location"/>
+      </genClasses>
+      <genClasses xmi:type="genmodel:GenClass" ecoreClass="ecore:EClass asmRia.ecore#//richElementsMetamodel/RichNode">
+        <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute asmRia.ecore#//richElementsMetamodel/RichNode/location"/>
+      </genClasses>
+      <genClasses xmi:type="genmodel:GenClass" ecoreClass="ecore:EClass asmRia.ecore#//richElementsMetamodel/RichCompositeUiElement">
+        <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute asmRia.ecore#//richElementsMetamodel/RichCompositeUiElement/location"/>
+      </genClasses>
+      <genClasses xmi:type="genmodel:GenClass" ecoreClass="ecore:EClass asmRia.ecore#//richElementsMetamodel/RichUiElement">
+        <genFeatures xmi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference asmRia.ecore#//richElementsMetamodel/RichUiElement/elementType"/>
+      </genClasses>
+      <genClasses xmi:type="genmodel:GenClass" ecoreClass="ecore:EClass asmRia.ecore#//richElementsMetamodel/RichValueObject">
+        <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute asmRia.ecore#//richElementsMetamodel/RichValueObject/location"/>
+        <genFeatures xmi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute asmRia.ecore#//richElementsMetamodel/RichValueObject/duration"/>
+      </genClasses>
+    </nestedGenPackages>
+  </genPackages>
+  <genPackages xmi:type="genmodel:GenPackage" prefix="Types" basePackage="org.eclipse.uml2"
+      disposableProviderFactory="true" ecorePackage="ecore:EPackage types.ecore#/">
+    <genDataTypes xmi:type="genmodel:GenDataType" ecoreDataType="ecore:EDataType types.ecore#//Boolean"/>
+    <genDataTypes xmi:type="genmodel:GenDataType" ecoreDataType="ecore:EDataType types.ecore#//Integer"/>
+    <genDataTypes xmi:type="genmodel:GenDataType" ecoreDataType="ecore:EDataType types.ecore#//Real"/>
+    <genDataTypes xmi:type="genmodel:GenDataType" ecoreDataType="ecore:EDataType types.ecore#//UnlimitedNatural"/>
+    <genDataTypes xmi:type="genmodel:GenDataType" ecoreDataType="ecore:EDataType types.ecore#//String"/>
+  </genPackages>
+</genmodel:GenModel>

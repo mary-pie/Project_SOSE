@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:asmRia.richElementsMetamodel="http:///asmRia/richElementsMetamodel.ecore" xsi:schemaLocation="http:///asmRia/richElementsMetamodel.ecore ../ecores/asmRia.ecore#//richElementsMetamodel">
-  <asmRia.richElementsMetamodel:RichService xmi:id="_DQcSQNBJEey6HYSYZrj42g" name="Login"/>
-  <asmRia.richElementsMetamodel:RichService xmi:id="_DQcSQdBJEey6HYSYZrj42g" name="Inserimento dati"/>
-</xmi:XMI>

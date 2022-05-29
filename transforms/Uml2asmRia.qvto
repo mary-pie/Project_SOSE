@@ -18,11 +18,10 @@ main() {
 */
 mapping State::StateToRichService() : RichService
 	when {
-  		-- You need to use the fully qualified name!!
+  		-- getAppliedStereotype richiede il fully qualified name!!
   		not self.getAppliedStereotype('model::ASMRia Profile::service').oclIsUndefined();
 	}
 	{
-		log("Name of the Automaton: " + self.getAppliedStereotype('model::ASMRia Profile::service').repr());
 	  	result.name := self.name; 
 	}
 
@@ -32,7 +31,6 @@ mapping State::StateToRichService() : RichService
 */	
 mapping UseCase::UseCaseToRichNode() : RichNode
 	when {
-  		-- You need to use the fully qualified name!!
   		not self.getAppliedStereotype('model::ASMRia Profile::node').oclIsUndefined();
 	};
 	
@@ -42,11 +40,9 @@ mapping UseCase::UseCaseToRichNode() : RichNode
 */
 mapping Class::ClassToRichEntity() : RichEntity
 	when {
-  -- You need to use the fully qualified name!!
   		not self.getAppliedStereotype('model::ASMRia Profile::entity').oclIsUndefined();
 	}
 	{
-		log("Name of the Automaton: " + self.getAppliedStereotype('model::ASMRia Profile::entity').repr());
 		result.name := self.name;
 	}
 		
@@ -56,6 +52,5 @@ mapping Class::ClassToRichEntity() : RichEntity
 	
 mapping Class::ClassToRichValueObject() : RichValueObject
 	when {
-  		-- You need to use the fully qualified name!!
   		not self.getAppliedStereotype('model::ASMRia Profile::valueObject').oclIsUndefined();
 	};
