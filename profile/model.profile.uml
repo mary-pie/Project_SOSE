@@ -178,7 +178,7 @@
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#UseCase"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Gm69krcpEeymGtFdUNayGA"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_EpTS8LcsEeymGtFdUNayGA" name="Location" visibility="package" type="_PyhxgLcpEeymGtFdUNayGA">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_EpTS8LcsEeymGtFdUNayGA" name="Location" visibility="public" type="_PyhxgLcpEeymGtFdUNayGA">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EpTS8bcsEeymGtFdUNayGA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EpTS8rcsEeymGtFdUNayGA" value="*"/>
       </ownedAttribute>

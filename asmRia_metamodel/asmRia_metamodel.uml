@@ -26,7 +26,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_7shboLcfEeymGtFdUNayGA" name="RichEntity " visibility="package">
       <generalization xmi:type="uml:Generalization" xmi:id="_OvJlwLclEeymGtFdUNayGA" general="_d1CuMLciEeymGtFdUNayGA"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_NYcDwLcgEeymGtFdUNayGA" name="location" type="_a0UsALceEeymGtFdUNayGA" isUnique="false"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_NYcDwLcgEeymGtFdUNayGA" name="location" visibility="public" type="_a0UsALceEeymGtFdUNayGA" isUnique="false"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_WdKzoLcgEeymGtFdUNayGA" name="duration" type="_UM52oLcfEeymGtFdUNayGA" isUnique="false"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_76RjwLcfEeymGtFdUNayGA" name="RichLayout" visibility="package">
